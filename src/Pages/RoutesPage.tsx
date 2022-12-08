@@ -8,7 +8,7 @@ import Homepage from "./Homepage";
 
 function RoutesPage(){
 return (
-    <Router basename="https://brafma.github.io/picturingyouu.github.io">
+    <Router>
         <Routes>
           <Route path="/formulario" element={<FormPage />} />
           <Route path="/" element={<Homepage />} />
