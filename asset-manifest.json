@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/picturingyouu.github.io/static/css/main.3054f2a8.css",
+    "main.js": "/picturingyouu.github.io/static/js/main.4f37046b.js",
+    "static/js/787.82b5bd58.chunk.js": "/picturingyouu.github.io/static/js/787.82b5bd58.chunk.js",
+    "static/media/blank.jpg": "/picturingyouu.github.io/static/media/blank.66050262e90886412aca.jpg",
+    "static/media/bgImg.svg": "/picturingyouu.github.io/static/media/bgImg.61884d6e0be66d000259fd17c1bd470a.svg",
+    "index.html": "/picturingyouu.github.io/index.html",
+    "main.3054f2a8.css.map": "/picturingyouu.github.io/static/css/main.3054f2a8.css.map",
+    "main.4f37046b.js.map": "/picturingyouu.github.io/static/js/main.4f37046b.js.map",
+    "787.82b5bd58.chunk.js.map": "/picturingyouu.github.io/static/js/787.82b5bd58.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3054f2a8.css",
+    "static/js/main.4f37046b.js"
+  ]
+}
