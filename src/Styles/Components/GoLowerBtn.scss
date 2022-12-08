@@ -1,0 +1,63 @@
+.goLowerBtn{
+    transition: all 1s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    &:hover{
+        .myTooltip{opacity: 1;}
+        .link{
+            span{
+                -webkit-animation: flickerAnimation 1s infinite;
+                -moz-animation: flickerAnimation 1s infinite;
+                -o-animation: flickerAnimation 1s infinite;
+                    animation: flickerAnimation 1s infinite;
+            }
+        }
+    }
+    .myTooltip{
+        opacity: 0;
+        color: $white;
+        font-size: 15px;
+        font-weight: 500;
+        text-shadow: 5px 5px 5px #03323a;
+        transform: translateX(-10%);
+        margin-bottom: 10px;
+    }
+    .link{
+    display: block;
+    border-radius: 50%;
+    border: 1px solid $white;
+    background-color: rgba($blue2, 0.8);
+    color: $white;
+    padding: 20px 25px;
+    text-align: center;
+    width: fit-content;
+    transform: translateX(-25%);
+    pointer-events: all;
+    span{
+        font-size: 30px;
+    }
+    }
+}
+
+@keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0.2; }
+    100% { opacity:1; }
+  }
+  @-o-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0.2; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0.2; }
+    100% { opacity:1; }
+  }
+  @-webkit-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0.2; }
+    100% { opacity:1; }
+  }

@@ -1,0 +1,86 @@
+#Navbar{
+    display: block;
+    z-index: 10;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(0deg, $secondary 12%, transparent 74%);
+    height: 85px;
+    opacity: 1;
+    transition: all 0.30s ease-in;
+    &.scrollingDown{
+        opacity: 0;
+        pointer-events: none;
+    }
+    &.inBanner{
+        background: linear-gradient(0deg, $secondary 12%, $blue2 74%);
+    }
+    &.isFormPage{
+        background: none;
+        .navbarContainer{
+            .logo{
+                color: $blue2;
+                text-shadow: 2px 2px 2px $white;
+            }
+        }
+    }
+    .navbarContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 100px;
+        position: relative;
+        .logo{
+            color:$white;
+            font-size: 30px;
+            font-weight: 600;
+            padding: 10px;
+            text-transform: uppercase;
+            cursor: pointer;
+            &:hover{text-decoration: none;}
+        }
+        .menus{
+            display: flex;
+            align-items: center;
+            .langSelect{
+                position: relative;
+                &.active{
+                    .langOptions{
+                        display: block;
+                    }
+                }
+                .langSelectPlaceholder{
+                    height: 30px;
+                    width: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 2px solid $blue2;
+                    background-color: $white;
+                    color: $blue2;
+                    font-size: 15px;
+                    border-radius: 50px;
+                    cursor: pointer;
+                }
+                .langOptions{
+                    display: none;
+                    position: absolute;
+                    top:30px;
+                    color: $white;
+                    font-size: 15px;
+                    cursor: pointer;
+                }
+            }
+            .menu{
+                color:$white;
+                font-size: 15px;
+                font-weight: 500;
+                margin-left:5px;
+                padding: 10px;
+                cursor: pointer;
+                &:hover{background-color: $white; color: $blue2; text-decoration: none; border-radius: 25px;}
+            }
+        }
+    }
+}

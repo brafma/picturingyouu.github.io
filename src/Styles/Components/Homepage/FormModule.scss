@@ -1,0 +1,128 @@
+#FormModule{
+    height: 100%;
+    scroll-behavior: smooth;
+    padding-bottom: 0px;
+    background-color: $blue2;
+    padding: 80px 10px;
+    .formContainer{
+        background-color: rgba($white, 0.8);
+        border-radius: 25px;
+        box-shadow: 5px 5px 15px 5px #000000;
+        padding: 30px 75px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        text-align: left;
+        .formTitle{
+            color: $black;
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+        .formArea{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 5px 0px;
+            .formAreaText{
+                width: 100%;
+                font-size: 25px;
+                font-weight: 500;
+            }
+            .formAreaText2{
+                width: 100%;
+                font-size: 20px;
+                font-weight: 500;
+            }
+            .formBtn{
+                color: $blue2;
+                background-color: transparent;
+                border: 1px solid $blue2;
+                margin-top: 30px;
+                &:hover{
+                    color: $white;
+                    background-color: $blue2;
+                    border: 1px solid $white;
+                }
+            }
+        }
+        .or{
+            opacity: 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .line{
+                display: block;
+                border-left: 1px solid $secondary;
+                height: 45%;
+                transform: translateX(50%);
+            }
+        }
+        .ContactUsArea{
+            font-size: 30px;
+            color:$blue2;
+            font-weight: 600;
+            text-align: left;
+            span{
+                display: block;
+                font-size: 30px;
+                color: $blue2;
+                margin-top: 20px;
+                }
+            .contactTitle{
+                display: block;
+                font-size: 20px;
+                color:$blue2;
+                font-weight: 500;
+            }
+            .contactLabel{
+                display: block;
+                font-size: 15px;
+                color:$secondary;
+                font-weight: 400;
+                
+            }
+            .socialArea{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .socialItem{
+                    text-decoration: none;
+                    color:$blue2;
+                    span{
+                        margin: 30px 10px;
+                    }
+                }
+            }
+        }
+    }
+    .goLowerBtn{
+        width: fit-content;
+        margin: auto;
+        &:hover{
+            .link{
+                background-color: $white;
+                border-color: $blue2;
+                span{
+                    color: $blue2;
+                } 
+            }
+        }
+    }
+
+    @media (min-width:992px){
+        padding: 80px 20%;
+        .formContainer{
+            text-align: center;
+            .formArea{
+                width: 45%;
+                .formBtn{margin-top: 0px;}
+            }
+            .or{width: 5%; opacity: 1;}
+            .ContactUsArea{width: 50%; text-align: center;}
+        }
+    }
+}

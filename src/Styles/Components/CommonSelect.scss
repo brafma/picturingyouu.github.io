@@ -1,0 +1,60 @@
+.select{
+    position: relative;
+    width: 100%;
+    &.active{
+        .selectContent{
+            display: block;
+        }
+    }
+    .selectTop{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px;
+        background-color: $white;
+        border: 1px solid $secondary;
+        border-radius: 25px;
+        cursor: pointer;
+        .placeholder{
+            font-size: 15px;
+            font-weight: 500;
+            color:$secondary;
+            margin-right: 10px;
+        }
+    }
+    .selectContent{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: $white;
+        border: 1px solid $secondary;
+        padding:10px 5px;
+        border-radius: 15px;
+        z-index: 3;
+        .contentContainer{
+            position: relative;
+            padding-right: 25px;
+            .close{
+                position: absolute;
+                right: 10px;
+                font-size: 15px;
+                color: $blue2;
+                cursor: pointer;
+            }
+            .choice{
+                font-size: 15px;
+                color: $secondary;
+                padding-left: 15px;
+                padding-bottom:10px;
+                cursor: pointer;
+                width: fit-content;
+                &:hover{
+                    color: $blue2;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
