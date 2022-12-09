@@ -31,5 +31,35 @@
 		"barrinha",
 		"praia",
 		"outra coisa"
+	],
+	"homePresets":[
+		{
+			"index":1,
+			"image":"https://cdn.shopify.com/s/files/1/0531/2240/0453/products/PresetCovers_1440x.png?v=1659071270",
+			"title":"preset muito bonito",
+			"price":"13",
+			"description":"com este preset as suas fotos já nem vão ser as mesmas, tipo muda tudo"
+		},
+		{
+			"index":2,
+			"image":"https://cdn.shopify.com/s/files/1/0031/1420/5295/products/2022-free-lightroom-presets-gdome-water-lake-travel-406_2048x.jpg?v=1664726157",
+			"title":"sepia preset",
+			"price":"22",
+			"description":"com isto fica logo tudo a parecer um filme de terror"
+		},
+		{
+			"index":3,
+			"image":"https://cdn.shopify.com/s/files/1/0531/2240/0453/products/TheEssentialCollectionII_1440x.jpg?v=1659071270",
+			"title":"não gosto deste",
+			"price":"3000",
+			"description":"parecem todos muito apaixonados e felizes, eu que sou miseravel não gosto que me esfreguem isso na cara..."
+		},
+		{
+			"index":4,
+			"image":"https://cdn.shopify.com/s/files/1/0531/2240/0453/products/TheMorrocoCollection_1440x.jpg?v=1659071270",
+			"title":"um titulo",
+			"price":"18",
+			"description":"não sei o que escrever aqui"
+		}
 	]
 }

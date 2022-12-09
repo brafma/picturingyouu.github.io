@@ -15,9 +15,6 @@ function FormMoudule(){
             <div className="or"><span className="line"></span>{resources.or}<span className="line"></span></div>
             <div className="ContactUsArea">
                 Contacte-nos:
-                <span className="fa fa-phone"></span>
-                <div className="contactTitle">{resources.phone}</div>
-                <div className="contactLabel">964588749</div>
                 <span className="fa fa-at"></span>
                 <div className="contactTitle">{resources.email}</div>
                 <div className="contactLabel">joao.manta12@gmail.com</div>
@@ -34,7 +31,7 @@ function FormMoudule(){
                 </div>
             </div>
         </div>
-        <GoLowerBtn areaID="" text={resources.seeSocial} areaTitle="veja as redes Sociais" />
+        <GoLowerBtn areaID="PresetsModule" text={resources.buyPresets} areaTitle="Compre um preset" />
     </div>
     )
 }
